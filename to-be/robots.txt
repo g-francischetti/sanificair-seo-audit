@@ -1,0 +1,27 @@
+# ✅ SEO FIX: Sitemap punta al dominio reale del sito (corretto da "your_domain.com" al dominio reale)
+Sitemap: https://www.sanificair.it/sitemap.xml
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+# ✅ SEO FIX: Rimosso blocco /archives/ per non impedire l'indicizzazione di URL potenzialmente utili
+# Disallow: /archives/
+Disallow: /comments/feed/
+# ✅ SEO FIX: Aggiunte regole per bloccare URL di ricerca interna e paginazione che creano contenuto duplicato
+Disallow: /?s=
+Disallow: /?p=
+Disallow: /wp-json/
+# ✅ SEO FIX: Rimossa la sitemap utenti WordPress che espone gli username (privacy e security)
+# (la sitemap wp-sitemap-users-1.xml è stata esclusa dalla sitemap index)
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/
+
+User-agent: Adsbot-Google
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /

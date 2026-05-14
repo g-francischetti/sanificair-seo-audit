@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ✅ SEO FIX: Sitemap index corretta, dichiarata nel robots.txt con URL reale del dominio -->
+<!-- ✅ SEO FIX: Rimossa la sitemap wp-sitemap-users-1.xml che esponeva username WordPress -->
+<!-- ✅ SEO FIX: Aggiunte le date di ultima modifica (lastmod) per informare i crawler sulla freschezza dei contenuti -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Articoli del blog -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-posts-post-1.xml</loc>
+    <lastmod>2025-05-01</lastmod>
+  </sitemap>
+  <!-- Pagine statiche -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-posts-page-1.xml</loc>
+    <lastmod>2025-04-15</lastmod>
+  </sitemap>
+  <!-- Prodotti WooCommerce -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-posts-product-1.xml</loc>
+    <lastmod>2025-03-20</lastmod>
+  </sitemap>
+  <!-- Categorie blog -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-taxonomies-category-1.xml</loc>
+    <lastmod>2025-04-01</lastmod>
+  </sitemap>
+  <!-- Tag articoli -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-taxonomies-post_tag-1.xml</loc>
+    <lastmod>2025-04-01</lastmod>
+  </sitemap>
+  <!-- Categorie prodotti -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-taxonomies-product_cat-1.xml</loc>
+    <lastmod>2025-03-20</lastmod>
+  </sitemap>
+  <!-- Tag prodotti -->
+  <sitemap>
+    <loc>https://www.sanificair.it/wp-sitemap-taxonomies-product_tag-1.xml</loc>
+    <lastmod>2025-03-20</lastmod>
+  </sitemap>
+  <!-- ✅ SEO FIX: RIMOSSA la sitemap utenti WordPress — non espone più username degli autori -->
+</sitemapindex>

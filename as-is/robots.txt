@@ -1,0 +1,25 @@
+# ❌ SEO ISSUE: Sitemap dichiarata con dominio placeholder "your_domain.com" — NON punta al dominio reale del sito!
+# Questo è un errore critico: i motori di ricerca non trovano la sitemap tramite robots.txt
+Sitemap: https://www.your_domain.com/sitemap.xml
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+# ❌ SEO ISSUE: /archives/ bloccato — potenziali URL indicizzabili vengono esclusi
+Disallow: /archives/
+# ❌ SEO ISSUE: /comments/feed/ bloccato ma non è necessario se non si usa Disqus o simili
+Disallow: /comments/feed/
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /wp-content/uploads/
+
+User-agent: Adsbot-Google
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+# ❌ SEO ISSUE: Manca la direttiva "Crawl-delay" per gestire il crawl budget
+# ❌ SEO ISSUE: Mancano regole per bloccare URL di ricerca interna (?s=, ?q=) che creano pagine duplicate
