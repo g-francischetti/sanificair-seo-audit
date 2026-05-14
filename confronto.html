@@ -98,13 +98,28 @@
       border: 2px solid var(--green-border);
     }
     .score-big {
-      font-size: 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 90px;
+      line-height: 1;
+    }
+    .score-big .score-num {
+      font-size: 64px;
       font-weight: 900;
       line-height: 1;
-      min-width: 80px;
     }
-    .score-card.as-is .score-big { color: var(--red); }
-    .score-card.to-be .score-big { color: var(--green); }
+    .score-big .score-denom {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      opacity: .55;
+      margin-top: 4px;
+    }
+    .score-card.as-is .score-big .score-num { color: var(--red); }
+    .score-card.as-is .score-big .score-denom { color: var(--red); }
+    .score-card.to-be .score-big .score-num { color: var(--green); }
+    .score-card.to-be .score-big .score-denom { color: var(--green); }
     .score-label { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
     .score-desc { font-size: 14px; color: var(--gray); line-height: 1.5; }
     .score-badge {
@@ -328,9 +343,57 @@
     .cta-link.white { background: white; color: var(--green); }
     .cta-link.outline { background: transparent; color: white; border: 2px solid white; }
 
+    /* ── TABLET (max 900px) ── */
     @media (max-width: 900px) {
-      .score-grid, .issues-grid, .impact-grid, .pages-grid { grid-template-columns: 1fr; }
+      .score-grid, .impact-grid, .pages-grid { grid-template-columns: 1fr; }
+      .issues-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .header-meta { gap: 16px; }
       .comparison-table { font-size: 12px; }
+      .comparison-table thead th,
+      .comparison-table tbody td { padding: 10px 12px; }
+      .section-block { padding: 0 16px; }
+      .score-section { padding: 0 16px; }
+    }
+
+    /* ── MOBILE (max 600px) ── */
+    @media (max-width: 600px) {
+      .report-header { padding: 32px 20px; }
+      .report-header h1 { font-size: 24px; }
+      .report-header .subtitle { font-size: 15px; }
+      .header-meta { flex-direction: column; align-items: center; gap: 10px; }
+      .header-meta-item { width: 80%; }
+
+      .score-section { padding: 0 12px; margin-top: 24px; }
+      .score-grid { gap: 14px; }
+      .score-card { flex-direction: column; align-items: center; text-align: center; padding: 20px; }
+      .score-big { min-width: unset; }
+      .score-big .score-num { font-size: 52px; }
+      .score-label { font-size: 18px; }
+
+      .issues-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .issue-card { padding: 12px 8px; }
+
+      .section-block { padding: 0 12px; margin-bottom: 32px; }
+      .section-title-bar h2 { font-size: 18px; }
+
+      /* tabella: scroll orizzontale su mobile */
+      .comparison-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .comparison-table { min-width: 600px; font-size: 12px; }
+      .comparison-table thead .th-elem { width: 22%; }
+      .comparison-table thead .th-asis,
+      .comparison-table thead .th-tobe { width: 39%; }
+
+      .impact-grid { grid-template-columns: 1fr; }
+      .pages-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+
+      .cta-bar { padding: 36px 20px; }
+      .cta-bar h2 { font-size: 22px; }
+      .cta-links { flex-direction: column; align-items: center; }
+      .cta-link { width: 100%; max-width: 320px; text-align: center; }
+
+      .report-footer { padding: 24px 20px; }
     }
   </style>
 </head>
@@ -369,7 +432,7 @@
 <div class="score-section">
   <div class="score-grid">
     <div class="score-card as-is">
-      <div class="score-big">28<span style="font-size:28px">/100</span></div>
+      <div class="score-big"><span class="score-num">28</span><span class="score-denom">/ 100</span></div>
       <div>
         <div class="score-label">🔴 Stato Attuale (AS-IS)</div>
         <div class="score-desc">Il sito presenta gravi carenze SEO on-page: meta description assenti su tutte le pagine, robots.txt con placeholder errato che rompe l'indicizzazione della sitemap, nessun tag Open Graph, nessuno schema markup, heading strutturalmente non corretti in 4 pagine su 5.</div>
@@ -377,7 +440,7 @@
       </div>
     </div>
     <div class="score-card to-be">
-      <div class="score-big">87<span style="font-size:28px">/100</span></div>
+      <div class="score-big"><span class="score-num">87</span><span class="score-denom">/ 100</span></div>
       <div>
         <div class="score-label">🟢 Versione Ottimizzata (TO-BE)</div>
         <div class="score-desc">Tutte le carenze critiche risolte: meta title e description ottimizzati per keyword, robots.txt corretto, schema markup JSON-LD su ogni pagina, Open Graph completo, struttura H1/H2/H3 semanticamente corretta, alt text descrittivi e link interni con anchor text pertinenti.</div>
@@ -425,6 +488,7 @@
     <h2>Tabella di Confronto: Elementi SEO On-Page</h2>
   </div>
 
+  <div class="comparison-table-wrapper">
   <table class="comparison-table">
     <thead>
       <tr>
@@ -711,6 +775,7 @@
 
     </tbody>
   </table>
+  </div>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
