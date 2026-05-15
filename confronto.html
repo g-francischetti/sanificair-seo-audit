@@ -525,6 +525,11 @@
       <div class="metric-label">Local SEO migliorata</div>
       <div class="metric-desc">Lo schema LocalBusiness con indirizzo, telefono e orari rafforza la presenza in Google Maps e nelle ricerche locali "sanificazione condizionatori Milano".</div>
     </div>
+    <div class="impact-card">
+      <div class="metric">−60%</div>
+      <div class="metric-label">Tempo di caricamento</div>
+      <div class="metric-desc">WebP, lazy loading e script asincroni riducono il LCP da ~6s a &lt; 2,5s. I Core Web Vitals sono fattore di ranking diretto Google dal 2021: un sito lento perde posizioni indipendentemente dalla qualità dei contenuti.</div>
+    </div>
   </div>
 </div>
 
@@ -799,6 +804,33 @@
             <li>✓ Ogni link descrive il contenuto della destinazione</li>
             <li>✓ Keyword pertinenti integrate naturalmente</li>
             <li>✓ CTA con contesto chiaro sull'azione</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- PERFORMANCE / CORE WEB VITALS -->
+      <tr>
+        <td class="td-elem">⚡ Performance<br><small style="font-weight:400;color:var(--gray);">Core Web Vitals</small></td>
+        <td class="td-asis">
+          <span class="status status-error">❌ SOTTO SOGLIA GOOGLE</span><br>
+          <span class="issue-text">Tempo di caricamento rilevato: ~6 secondi (soglia "buona" Google: ≤ 2,5s LCP).</span>
+          <ul style="margin-top:8px; padding-left:18px; font-size:13px; color:var(--gray);">
+            <li>❌ Immagini non ottimizzate (nessun formato WebP)</li>
+            <li>❌ Nessun <code>loading="lazy"</code> sulle immagini below-the-fold</li>
+            <li>❌ Script di terze parti caricati in modo sincrono nel <code>&lt;head&gt;</code></li>
+            <li>❌ Nessuna policy di caching browser configurata</li>
+            <li>⚠️ Core Web Vitals è fattore di ranking Google da maggio 2021</li>
+          </ul>
+        </td>
+        <td class="td-tobe">
+          <span class="status status-ok">✅ OTTIMIZZATO</span><br>
+          <ul style="margin-top:8px; padding-left:18px; font-size:13px; color:var(--gray);">
+            <li>✓ Immagini convertite in WebP (−60–80% peso)</li>
+            <li>✓ <code>loading="lazy"</code> su tutte le immagini below-the-fold</li>
+            <li>✓ Script non critici con attributo <code>defer</code> / <code>async</code></li>
+            <li>✓ Caching browser via header HTTP Cache-Control</li>
+            <li>✓ LCP target &lt; 2,5 secondi (soglia "buona" Google)</li>
+            <li>✓ Implementabile su WordPress con WP Rocket o LiteSpeed Cache</li>
           </ul>
         </td>
       </tr>
