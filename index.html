@@ -449,7 +449,7 @@
       <div class="score-big"><span class="score-num">87</span><span class="score-denom">/ 100</span></div>
       <div>
         <div class="score-label">🟢 Versione Ottimizzata (TO-BE)</div>
-        <div class="score-desc">Tutte le carenze critiche risolte: meta title e description ottimizzati per keyword, robots.txt corretto, schema markup JSON-LD su ogni pagina, Open Graph completo, struttura H1/H2/H3 semanticamente corretta, alt text descrittivi e link interni con anchor text pertinenti.</div>
+        <div class="score-desc">Tutte le carenze critiche risolte: meta title e description ottimizzati per keyword, robots.txt corretto, schema markup JSON-LD su ogni pagina, Open Graph completo, struttura H1/H2/H3 semanticamente corretta, alt text descrittivi, link interni con anchor text pertinenti e performance ottimizzata (WebP, lazy loading, script asincroni).</div>
         <span class="score-badge badge-green">OTTIMIZZAZIONE COMPLETATA</span>
       </div>
     </div>
@@ -534,11 +534,93 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
-     TABELLA DI CONFRONTO PRINCIPALE
+     AUDIT PER PAGINA
 ═══════════════════════════════════════════════════════════ -->
 <div class="section-block">
   <div class="section-title-bar">
     <div class="section-num">2</div>
+    <h2>Audit SEO Dettagliato per Pagina</h2>
+  </div>
+
+  <div class="pages-grid">
+
+    <div class="page-audit">
+      <h3>🏠 Homepage (index.html)</h3>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1 non ottimizzato per keyword "sanificazione condizionatori"</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema markup: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Canonical: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Alt immagine numero verde: vuoto</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H2 "le Nostre recensioni da google": capitalizzazione errata</span></div>
+      <div class="audit-item"><div class="audit-dot dot-green"></div><span>H1 presente (anche se non ottimizzato)</span></div>
+    </div>
+
+    <div class="page-audit">
+      <h3>🧼 Sanificazione</h3>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1 con typo: "Perchè" → deve essere "Perché"</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 "sanificazione in corso": testo placeholder rimasto</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Canonical: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Alt immagine numero verde: vuoto</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>CTA "prenota": anchor text generico</span></div>
+    </div>
+
+    <div class="page-audit">
+      <h3>👥 Chi Siamo</h3>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1: COMPLETAMENTE ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 "ARIA SANA PER VIVERE MEGLIO": slogan non SEO</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema Organization: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H3 "il nostro team": minuscolo, non ottimizzato</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Foto team (3 persone): alt assente</span></div>
+    </div>
+
+    <div class="page-audit">
+      <h3>📞 Contatti</h3>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1: COMPLETAMENTE ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 "Contatti" + H3 "CONTATTI": contenuto duplicato</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema LocalBusiness: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H3 "scrivici per saperne di più": generico</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Nessun link esplicito a Privacy Policy nel form</span></div>
+    </div>
+
+    <div class="page-audit">
+      <h3>🤝 Affiliazione</h3>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 con typo: "Sanific_air_®" invece di "Sanificair®"</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema Offer/Service: ASSENTE</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H3 "Silver" / "Gold": nessun contesto keyword</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Foto testimonial (3): alt assente</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>CTA "Scopri di più": anchor generico</span></div>
+      <div class="audit-item"><div class="audit-dot dot-green"></div><span>H1 presente e ben strutturato</span></div>
+    </div>
+
+    <div class="page-audit">
+      <h3>🤖 robots.txt &amp; Sitemap</h3>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>robots.txt: URL sitemap è un placeholder "your_domain.com"</span></div>
+      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Sitemap utenti WordPress esposta pubblicamente</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>/archives/ bloccata inutilmente</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Nessun blocco per parametri URL (?s=, ?p=)</span></div>
+      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Sitemap senza date lastmod</span></div>
+      <div class="audit-item"><div class="audit-dot dot-green"></div><span>Struttura sitemap index presente e corretta</span></div>
+      <div class="audit-item"><div class="audit-dot dot-green"></div><span>Bot Google (Ads, Image, Mobile) configurati</span></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TABELLA DI CONFRONTO PRINCIPALE
+═══════════════════════════════════════════════════════════ -->
+<div class="section-block">
+  <div class="section-title-bar">
+    <div class="section-num">3</div>
     <h2>Tabella di Confronto: Elementi SEO On-Page</h2>
   </div>
 
@@ -856,88 +938,6 @@
 
     </tbody>
   </table>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     AUDIT PER PAGINA
-═══════════════════════════════════════════════════════════ -->
-<div class="section-block">
-  <div class="section-title-bar">
-    <div class="section-num">3</div>
-    <h2>Audit SEO Dettagliato per Pagina</h2>
-  </div>
-
-  <div class="pages-grid">
-
-    <div class="page-audit">
-      <h3>🏠 Homepage (index.html)</h3>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1 non ottimizzato per keyword "sanificazione condizionatori"</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema markup: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Canonical: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Alt immagine numero verde: vuoto</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H2 "le Nostre recensioni da google": capitalizzazione errata</span></div>
-      <div class="audit-item"><div class="audit-dot dot-green"></div><span>H1 presente (anche se non ottimizzato)</span></div>
-    </div>
-
-    <div class="page-audit">
-      <h3>🧼 Sanificazione</h3>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1 con typo: "Perchè" → deve essere "Perché"</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 "sanificazione in corso": testo placeholder rimasto</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Canonical: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Alt immagine numero verde: vuoto</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>CTA "prenota": anchor text generico</span></div>
-    </div>
-
-    <div class="page-audit">
-      <h3>👥 Chi Siamo</h3>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1: COMPLETAMENTE ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 "ARIA SANA PER VIVERE MEGLIO": slogan non SEO</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema Organization: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H3 "il nostro team": minuscolo, non ottimizzato</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Foto team (3 persone): alt assente</span></div>
-    </div>
-
-    <div class="page-audit">
-      <h3>📞 Contatti</h3>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H1: COMPLETAMENTE ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 "Contatti" + H3 "CONTATTI": contenuto duplicato</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema LocalBusiness: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H3 "scrivici per saperne di più": generico</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Nessun link esplicito a Privacy Policy nel form</span></div>
-    </div>
-
-    <div class="page-audit">
-      <h3>🤝 Affiliazione</h3>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Meta description: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>H2 con typo: "Sanific_air_®" invece di "Sanificair®"</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Open Graph: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Schema Offer/Service: ASSENTE</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>H3 "Silver" / "Gold": nessun contesto keyword</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Foto testimonial (3): alt assente</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>CTA "Scopri di più": anchor generico</span></div>
-      <div class="audit-item"><div class="audit-dot dot-green"></div><span>H1 presente e ben strutturato</span></div>
-    </div>
-
-    <div class="page-audit">
-      <h3>🤖 robots.txt &amp; Sitemap</h3>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>robots.txt: URL sitemap è un placeholder "your_domain.com"</span></div>
-      <div class="audit-item"><div class="audit-dot dot-red"></div><span>Sitemap utenti WordPress esposta pubblicamente</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>/archives/ bloccata inutilmente</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Nessun blocco per parametri URL (?s=, ?p=)</span></div>
-      <div class="audit-item"><div class="audit-dot dot-orange"></div><span>Sitemap senza date lastmod</span></div>
-      <div class="audit-item"><div class="audit-dot dot-green"></div><span>Struttura sitemap index presente e corretta</span></div>
-      <div class="audit-item"><div class="audit-dot dot-green"></div><span>Bot Google (Ads, Image, Mobile) configurati</span></div>
-    </div>
-
   </div>
 </div>
 
