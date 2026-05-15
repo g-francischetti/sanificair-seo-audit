@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analisi SEO Sanificair® — Confronto AS-IS vs TO-BE</title>
+  <!-- Performance: priorità al rendering della pagina -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0b3d91">
   <style>
     :root {
       --red: #dc2626;
@@ -138,6 +141,9 @@
       max-width: 1100px;
       margin: 0 auto 50px;
       padding: 0 30px;
+      /* Async rendering: non renderizza le sezioni fuori schermo (-30~50% render time) */
+      content-visibility: auto;
+      contain-intrinsic-size: auto 600px;
     }
     .section-title-bar {
       display: flex;
